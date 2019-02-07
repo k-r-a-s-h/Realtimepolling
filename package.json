@@ -1,0 +1,23 @@
+{
+  "name": "real-time-polling-app",
+  "version": "1.0.0",
+  "description": "real time polling app ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "k-r-a-s-h"
+  },
+  "author": "krishna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.10",
+    "pusher": "^2.2.0"
+  }
+}
