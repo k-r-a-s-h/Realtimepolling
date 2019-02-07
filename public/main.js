@@ -5,7 +5,7 @@ const form = document.getElementById('vote-form');
 form.addEventListener('submit',(e)=>{
     const choice = document.querySelector('input[name=os]:checked').value;
     const data = {os:choice};
-    fetch('http://localhost:7676/poll',{
+    fetch('https://morning-citadel-63254.herokuapp.com/poll',{
         method: 'post',
         body: JSON.stringify(data),
         headers: new Headers({
@@ -18,7 +18,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault();
 })
 
-fetch("http://localhost:7676/poll")
+fetch("https://morning-citadel-63254.herokuapp.com/poll")
     .then(res => res.json())
     .then(data => {
         const votes =data.votes;
@@ -41,7 +41,7 @@ fetch("http://localhost:7676/poll")
                 animationEnabled:true,
                 theme: 'theme2',
                 title:{
-                    text:`Total Votes ${totalVotes}`
+                    text:`Total Votes ${totalVotes  }`
                 },
                 data:[
                     {
