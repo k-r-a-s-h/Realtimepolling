@@ -41,7 +41,7 @@ fetch("https://morning-citadel-63254.herokuapp.com/poll")
                 animationEnabled:true,
                 theme: 'theme2',
                 title:{
-                    text:`Total Votes ${totalVotes  }`
+                    text:`Votes`
                 },
                 data:[
                     {
