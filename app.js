@@ -25,4 +25,4 @@ app.use("/poll",poll);
 
 const port =7676;
 
-app.listen(port,()=>console.log(`Server started on port ${port}`));
+app.listen(process.env.PORT,process.env.IP,()=>console.log(`Server started on port ${port}`));
